@@ -7,10 +7,6 @@ const Sidebar = () =>{
         setContador((numeroActual) => numeroActual + 1)
     }
 
-    function disminuirContador(){
-        setContador((numeroActual) => (numeroActual > 0 ? numeroActual - 1 : 0));
-
-    }
 
     function reinicioContador(){
         setContador(0)
@@ -32,9 +28,6 @@ const Sidebar = () =>{
                     onClick={(aumentarContador)}> Aumentar 
                 </button>
 
-                <button className="w-full bg-pink-500 text-white py-2 px-4 rounded-lg " 
-                    onClick={(disminuirContador)}> Disminuir 
-                </button>
 
                 <button className="w-full bg-pink-500 text-white py-2 px-4 rounded-lg " 
                     onClick={(reinicioContador)}> Reiniciar 
